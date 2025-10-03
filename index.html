@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Simple Todo List</title>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" aria-labelledby="title">
+      <header>
+        <h1 id="title">Todo List</h1>
+        <p>Manage tasks. Changes are saved to your browser automatically.</p>
+      </header>
+
+      <div class="input-row" role="search">
+        <input id="taskInput" type="text" placeholder="Add a new task and press Enter" aria-label="New task" />
+        <button id="addBtn" class="btn" aria-label="Add task">Add</button>
+        <button id="clearCompleted" class="btn ghost" aria-label="Clear completed tasks">Clear completed</button>
+      </div>
+
+      <div id="list" class="list" aria-live="polite"></div>
+
+      <div class="footer" aria-hidden="false">
+        <div class="left">
+          <span id="count" class="muted">0 tasks</span>
+        </div>
+        <div>
+          <button id="clearAll" class="small-btn" title="Delete all tasks">Delete all</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <script src="./Js/main.js"></script>
+</body>
+</html>
